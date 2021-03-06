@@ -15,3 +15,8 @@ content varchar2(4000) not null,
 ip varchar2(20) not null);  
     
 create sequence spring_board_seq; 
+
+index.jsp   
+     -> DispatcherServlet       
+     -> springboard-servlet.xml     
+     -> 해당되는 BoardController로 이동
