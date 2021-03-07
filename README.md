@@ -17,6 +17,6 @@ ip varchar2(20) not null);
 create sequence spring_board_seq; 
 
 index.jsp   
-     -> DispatcherServlet       
-     -> springboard-servlet.xml     
-     -> 해당되는 BoardController로 이동
+     -> DispatcherServlet -> HandlerMapping            
+     -> DispatcherServlet -> Controller(실제 구현하는 곳)         
+     -> DispatcherServlet -> (ViewResolver) -> View(실제 보여지는 객체)     
